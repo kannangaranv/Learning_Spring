@@ -1,4 +1,11 @@
 package org.example.my_app;
 
-public class Laptop {
+import org.springframework.stereotype.Component;
+
+@Component
+public class Laptop implements Computer {
+
+    public void compile(){
+        System.out.println("Compile Laptop");
+    }
 }
